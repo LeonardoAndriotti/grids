@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Documentação Grids</title>
+	<link rel="stylesheet" type="text/css" href="grids.css">
+	<style>
+	.ex-grids{
+		background: #009688;
+		color: #fff;
+		text-align: center;
+		padding: 5px;
+		margin-bottom: 1%;
+	}
+	.txt-center{
+		text-align: center;
+	}
+	.flex-container{
+		background-color: #009688;
+		width: 100%;
+		height: 100px;
+		color: #fff;
+	}
+	.flex-direction-column{
+	    background-color: #009688;
+	}
+	.flex-direction-column > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-direction-column-reverse{
+	    background-color: #009688;
+	}
+	.flex-direction-column-reverse > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-direction-row{
+	    background-color: #009688;
+	}
+	.flex-direction-row > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-direction-row-reverse{
+	    background-color: #009688;
+	}
+	.flex-direction-row-reverse > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-wrap{
+	    background-color: #009688;
+	}
+	.flex-wrap > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-wrap-reverse{
+	    background-color: #009688;
+	}
+	.flex-wrap-reverse > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-row-wrap{
+	    background-color: #009688;
+	}
+	.flex-row-wrap > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-align-center{
+	    background-color: #009688;
+	}
+	.flex-align-center > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-align-end{
+	    background-color: #009688;
+	}
+	.flex-align-end > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-space-around{
+	    background-color: #009688;
+	}
+	.flex-space-around > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-space-between{
+	    background-color: #009688;
+	}
+	.flex-space-between > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-items-start{
+	    background-color: #009688;
+	}
+	.flex-items-start > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-items-end{
+	    background-color: #009688;
+	}
+	.flex-items-end > div {
+		background-color: #f1f1f1;
+		width: 100px;
+		margin: 10px;
+		text-align: center;
+		line-height: 75px;
+		font-size: 30px;
+	}
+	.flex-container-center{
+	    background-color: #009688;
+	}
+	.flex-container-center>div {
+		background-color: #f1f1f1;
+		color: white;
+		width: 100px;
+		height: 100px;
+	}
+</style>
+</head>
+<body>
+	<h1 class="txt-center">Documentação Grids</h1>
+	<h3>Sistemas de Grids</h3>
+	<p>O Sistema de gris é construido em todos colunas, para implentar basta colocar a seguinte classe.<br/>
+	Obs. Como boa pratica sempre coloque suas colunas em linhas, para melhor organização e alinhamento dos objetos em tela.</p>
+	<div class="row">
+		<div class="column col-12 ex-grids">column col-12</div>
+	</div>
+	<div class="row">
+		<div class="column col-6 ex-grids">column col-6</div>
+		<div class="column col-6 ex-grids">column col-6</div>
+	</div>
+	<div class="row">
+		<div class="column col-3 ex-grids">column col-3</div>
+		<div class="column col-3 ex-grids">column col-3</div>
+		<div class="column col-3 ex-grids">column col-3</div>
+		<div class="column col-3 ex-grids">column col-3</div>
+	</div>
+	<h3>Flex Box</h3>
+	<h4>Container flexivel</h4>
+	<div class="flex-container">flex-container</div>
+
+	<h4>Propriedade flex-direction A flex-directionpropriedade define em qual direção o contêiner deseja empilhar os itens flexíveis.</h4>
+	<h3>Alinhando como coluna (flex-direction-column)</h3>
+	<div class="flex-direction-column">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+	</div>
+
+
+	<h3>Alinhando como coluna reverso (flex-direction-column-reverse)</h3>
+	<div class="flex-direction-column-reverse">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+	</div>
+	<h3>O valor da linha empilha os itens flexíveis horizontalmente (da esquerda para a direita) (flex-direction-row)</h3>
+	<div class="flex-direction-row">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+	</div>
+	<h3>O valor de reversão de linha empilha os itens flexíveis horizontalmente (mas da direita para a esquerda) (flex-direction-row-reverse)</h3>
+	<div class="flex-direction-row-reverse">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+	</div>
+
+	<h4>A propriedade flex-wrap A flex-wrappropriedade especifica se os itens flexíveis devem ser agrupados ou não.</h4>
+	<h3>O valor wrap especifica que os itens flexíveis serão agrupados, se necessário: (flex-wrap)</h3>
+	<div class="flex-wrap">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>  
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>  
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>  
+	</div>
+	<h3>O valor wrap-reverse especifica que os itens flexíveis serão agrupados, se necessário, na ordem inversa: (flex-wrap-reverse)</h3>
+	<div class="flex-wrap-reverse">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>  
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>  
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>  
+	</div>
+
+	<h3>A propriedade flex-flow A flex-flowpropriedade é uma propriedade abreviada para definir as propriedades flex-directione flex-wrap. (flex-row-wrap)</h3>
+	<div class="flex-row-wrap">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>  
+		<div>7</div>
+		<div>8</div>
+		<div>9</div>  
+		<div>10</div>
+		<div>11</div>
+		<div>12</div>  
+	</div>
+
+	<h4>A propriedade justify-content A justify-contentpropriedade é usada para alinhar os itens flexíveis:</h4>
+	<h3>O valor central alinha os itens flexíveis no centro do contêiner: (flex-align-center)</h3>
+	<div class="flex-align-center">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+	</div>
+	<h3>O valor final flexível alinha os itens flexíveis no final do contêiner:(flex-align-end)</h3>
+	<div class="flex-align-end">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+	</div>
+	<h3>O valor de espaço ao redor exibe os itens flexíveis com espaço antes, entre e depois das linhas (flex-space-around)</h3> 
+	<div class="flex-space-around">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+	</div>
+	<h3>O valor entre espaços exibe os itens flexíveis com espaço entre as linhas: (flex-space-between)</h3> 
+	<div class="flex-space-between">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+	</div>
+	<h4>A propriedade de itens de alinhamento</h4>
+	<h3>O valor flex-start alinha os itens flexíveis na parte superior do contêiner: (flex-items-start)</h3>
+	<div class="flex-items-start">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+	</div>
+	<h3>O valor final flexível alinha os itens flexíveis na parte inferior do contêiner: (flex-items-end)</h3>
+	<div class="flex-items-end">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>  
+	</div>
+	<h4>Centralização Perfeita</h4>
+	<div class="flex-container-center">
+		<div></div>
+	</div>
+</body>
+</html>
